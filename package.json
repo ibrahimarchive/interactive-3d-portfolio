@@ -1,0 +1,111 @@
+{
+  "name": "interactive-3d-portfolio",
+  "private": true,
+  "version": "1.0.1",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --check .",
+    "format:fix": "prettier --write .",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
+  "author": {
+    "name": "Ibrahim Chowdhury",
+    "email": "ratul3089@gmail.com",
+    "url": "https://github.com/ibrahimarchive"
+  },
+  "description": "Modern UI/UX Portfolio using React and Three.js",
+  "keywords": [
+    "reactjs",
+    "netlify",
+    "react",
+    "modern-ui",
+    "modern-ux",
+    "portfolio",
+    "threejs",
+    "gsap",
+    "react-fiber",
+    "react-drei",
+    "react-three",
+    "emailjs",
+    "postcss",
+    "prettier",
+    "tailwindcss",
+    "tailwindcss-animate",
+    "ui/ux",
+    "js",
+    "javascript",
+    "typescript",
+    "eslint",
+    "html",
+    "css",
+    "js",
+    "ts"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ibrahimarchive/interactive-3d-portfolio.git"
+  },
+  "homepage": "https://github.com/ibrahimarchive/interactive-3d-portfolio#readme",
+  "bugs": {
+    "url": "https://github.com/ibrahimarchive/interactive-3d-portfolio/issues",
+    "email": "ratul3089@gmail.com"
+  },
+  "funding": [
+    {
+      "type": "patreon",
+      "url": "https://www.patreon.com/"
+    },
+    {
+      "type": "Buy me a coffee",
+      "url": "https://www.buymeacoffee.com/"
+    }
+  ],
+  "dependencies": {
+    "@emailjs/browser": "^4.4.1",
+    "@gsap/react": "^2.1.2",
+    "@react-three/drei": "^9.108.3",
+    "@react-three/fiber": "8",
+    "clsx": "^2.1.1",
+    "framer-motion": "^12.42.2",
+    "gsap": "^3.13.0",
+    "lucide-react": "^1.22.0",
+    "maath": "^0.10.8",
+    "react": "18",
+    "react-dom": "18",
+    "react-globe.gl": "^2.34.0",
+    "react-responsive": "^10.0.1",
+    "react-type-animation": "^3.2.0",
+    "sonner": "^2.0.6",
+    "tailwind-merge": "^3.3.1",
+    "three": "0.180.0",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.30.1",
+    "@types/react": "18",
+    "@types/react-dom": "18",
+    "@vitejs/plugin-react": "^5.0.0",
+    "autoprefixer": "^10.4.21",
+    "eslint": "^9.30.1",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^7.0.0",
+    "eslint-plugin-react-refresh": "^0.4.20",
+    "gh-pages": "^6.3.0",
+    "globals": "^16.3.0",
+    "postcss": "^8.5.6",
+    "prettier": "^3.6.2",
+    "prettier-plugin-tailwindcss": "^0.6.13",
+    "tailwindcss": "3",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.35.1",
+    "vite": "^7.0.2",
+    "leva": "^0.10.0"
+  }
+}
