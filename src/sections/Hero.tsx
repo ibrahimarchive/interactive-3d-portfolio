@@ -73,9 +73,8 @@ const AnimatedList = () => {
 
   return (
     <ul
-      className={`list-inside list-disc space-y-2 text-left text-neutral-300 md:text-lg lg:text-left transition-opacity duration-1000 ${
-        isFadedIn ? "opacity-100" : "opacity-0"
-      }`}
+      className={`list-inside list-disc space-y-2 text-left text-neutral-300 md:text-lg lg:text-left transition-opacity duration-1000 ${isFadedIn ? "opacity-100" : "opacity-0"
+        }`}
     >
       {texts.map((_text, index) => (
         <li key={index}>
@@ -108,102 +107,96 @@ export const HeroSection = () => {
   return (
     <>
       <section className="hero-section-font overflow-hidden pt-2 sm:pt-4 lg:pt-6">
-      <div className="relative mx-auto max-w-7xl px-6 pb-20 lg:-translate-x-12">
-        <div className="relative z-20 lg:flex lg:min-h-[36rem] lg:items-end">
-          <div className="relative z-20 mx-auto max-w-xl text-center lg:-ml-8 lg:w-auto lg:max-w-2xl lg:-mr-28 lg:translate-y-20 lg:rounded-[.8rem] lg:bg-black/40 lg:p-10 lg:text-left xl:ml-10">
-            <a
-              href="#about"
-              className="group mx-auto hidden w-fit items-center gap-3 rounded-lg border border-white/10 bg-white/5 p-1.5 pr-4 lg:ml-0 lg:flex"
-            >
-              <div className="relative ml-1 flex size-4 items-center justify-center">
-                <div className="absolute size-full animate-ping rounded-full bg-green-500/80" />
-                <div className="size-2.5 rounded-full bg-green-500" />
-              </div>
-              <span className="text-base text-neutral-200">Hi, I am Ibrahim Chowdhury</span>
-
-              <span className="inline-block origin-[70%_70%] animate-[wave-animation_2.5s_infinite] text-2xl">
-                👋
-              </span>
-            </a>
-
-            <h1 className="mt-20 text-balance text-4xl font-bold text-white md:text-5xl lg:mt-14 xl:text-6xl">
-              System{" "}
-              <span className="gradient-shine-text">
-                Administrator
-              </span>
-            </h1>
-
-            <p className="mt-12 text-neutral-300 md:text-lg">
-              Bridging the gap between hardware and human potential.
-            </p>
-
-            <div>
-              <form
-                className="mx-auto my-14 max-w-sm lg:my-16 lg:ml-0 lg:mr-auto"
-                onSubmit={handleSubmit}
+        <div className="relative mx-auto max-w-7xl px-6 pb-20 lg:-translate-x-4 xl:-translate-x-12">
+          <div className="relative z-20 lg:flex lg:min-h-[28rem] xl:min-h-[36rem] lg:items-end">
+            <div className="relative z-20 mx-auto max-w-xl text-center lg:-ml-2 lg:w-auto lg:max-w-xl lg:-mr-16 lg:translate-y-16 lg:rounded-[.8rem] lg:bg-black/40 lg:p-8 lg:text-left xl:ml-10 xl:max-w-2xl xl:-mr-28 xl:translate-y-20 xl:p-10">
+              <a
+                href="#about"
+                className="group mx-auto hidden w-fit items-center gap-3 rounded-lg border border-white/10 bg-white/5 p-1.5 pr-4 lg:ml-0 lg:flex"
               >
-                <div className="bg-background relative grid grid-cols-[1fr_auto] items-center rounded-[1rem] border border-white/10 shadow shadow-zinc-950/5 has-[input:focus]:ring-2 has-[input:focus]:ring-neutral-400">
-                  <Mail className="pointer-events-none absolute inset-y-0 left-5 my-auto size-5 text-neutral-400" />
-
-                  <input
-                    placeholder="Your mail address"
-                    className="h-12 w-full bg-transparent pl-12 text-white focus:outline-none"
-                    type="email"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                  />
-
-                  <div className="p-1">
-                    <Button aria-label="submit" containerClass="h-12 px-4">
-                      <span className="hidden md:block">Get Started</span>
-                      <SendHorizonal className="relative mx-auto size-5 md:hidden" strokeWidth={2} />
-                    </Button>
-                  </div>
+                <div className="relative ml-1 flex size-4 items-center justify-center">
+                  <div className="absolute size-full animate-ping rounded-full bg-green-500/80" />
+                  <div className="size-2.5 rounded-full bg-green-500" />
                 </div>
-              </form>
+                <span className="text-base text-neutral-200">Hi, I am Ibrahim Chowdhury</span>
 
-              <AnimatedList />
-            </div>
-          </div>
-        </div>
+                <span className="inline-block origin-[70%_70%] animate-[wave-animation_2.5s_infinite] text-2xl">
+                  👋
+                </span>
+              </a>
 
-        <div className="mt-14 lg:absolute lg:inset-x-6 lg:bottom-0 lg:mt-0 lg:px-0">
-         <div aria-hidden className="absolute inset-0 z-[1] bg-gradient-to-r from-black from-10% via-black/30 to-transparent" />
+              <h1 className="mt-20 text-balance text-4xl font-bold text-white md:text-5xl lg:mt-14 xl:text-6xl">
+                System{" "}
+                <span className="gradient-shine-text">
+                  Administrator
+                </span>
+              </h1>
 
-          <div className="relative lg:ml-auto lg:w-[62rem] lg:translate-x-10">
-            <div className="no-scrollbar flex justify-end gap-3 overflow-x-auto pb-1 pr-2 sm:gap-4 lg:overflow-hidden">
-              {previewCards.map((card, index) => (
-                <article
-                  key={card.title}
-                  className={`group relative h-[24rem] w-[13.5rem] shrink-0 overflow-hidden rounded-[.7rem] border border-white/10 bg-black/30 shadow-xl shadow-black/25 sm:h-[28rem] sm:w-[15.5rem] lg:h-[32rem] lg:w-[17rem] ${
-                    index === 0
-                      ? "order-1"
-                      : index === 1
-                      ? "order-3 lg:order-2"
-                      : "order-2 lg:order-3"
-                  }`}
+              <p className="mt-12 text-neutral-300 md:text-lg">
+                Bridging the gap between hardware and human potential.
+              </p>
+
+              <div>
+                <form
+                  className="mx-auto my-14 max-w-sm lg:my-16 lg:ml-0 lg:mr-auto"
+                  onSubmit={handleSubmit}
                 >
-                  <img
-                    src={card.image}
-                    alt={card.title}
-                    className="h-full w-full object-cover object-center"
-                    width={900}
-                    height={1200}
-                  />
+                  <div className="bg-background relative grid grid-cols-[1fr_auto] items-center rounded-[1rem] border border-white/10 shadow shadow-zinc-950/5 has-[input:focus]:ring-2 has-[input:focus]:ring-neutral-400">
+                    <Mail className="pointer-events-none absolute inset-y-0 left-5 my-auto size-5 text-neutral-400" />
 
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/20 to-transparent" />
+                    <input
+                      placeholder="Your mail address"
+                      className="h-12 w-full bg-transparent pl-12 text-white focus:outline-none"
+                      type="email"
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
+                    />
 
-                  <div className="absolute inset-x-3 bottom-3">
-                    <p className="text-sm font-medium text-white">{card.title}</p>
-                    <p className="text-xs text-neutral-300">{card.artist}</p>
+                    <div className="p-1">
+                      <Button aria-label="submit" containerClass="h-12 px-4">
+                        <span className="hidden md:block">Get Started</span>
+                        <SendHorizonal className="relative mx-auto size-5 md:hidden" strokeWidth={2} />
+                      </Button>
+                    </div>
                   </div>
-                </article>
-              ))}
+                </form>
+
+                <AnimatedList />
+              </div>
+            </div>
+          </div>
+
+          <div className="mt-14 lg:absolute lg:inset-x-6 lg:bottom-0 lg:mt-0 lg:px-0">
+            <div aria-hidden className="absolute inset-0 z-[1] bg-gradient-to-r from-black from-10% via-black/30 to-transparent" />
+
+            <div className="relative lg:ml-auto lg:w-[48rem] lg:translate-x-6 xl:w-[62rem] xl:translate-x-10">
+              <div className="no-scrollbar flex justify-center gap-3 overflow-x-hidden pb-1 pr-2 sm:justify-center sm:gap-4 lg:justify-end lg:overflow-hidden">
+                {previewCards.map((card) => (
+                  <article
+                    key={card.title}
+                    className="group relative h-[24rem] w-[13.5rem] shrink-0 overflow-hidden rounded-[.7rem] border border-white/10 bg-black/30 shadow-xl shadow-black/25 sm:h-[28rem] sm:w-[15.5rem] lg:h-[26rem] lg:w-[14rem] xl:h-[32rem] xl:w-[17rem]"
+                  >
+                    <img
+                      src={card.image}
+                      alt={card.title}
+                      className="h-full w-full object-cover object-center"
+                      width={900}
+                      height={1200}
+                    />
+
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/20 to-transparent" />
+
+                    <div className="absolute inset-x-3 bottom-3">
+                      <p className="text-sm font-medium text-white">{card.title}</p>
+                      <p className="text-xs text-neutral-300">{card.artist}</p>
+                    </div>
+                  </article>
+                ))}
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
     </>
   );
 };
